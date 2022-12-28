@@ -68,7 +68,6 @@ defmodule Statechart.StatechartTest do
     test "raises if event targets a root that doesn't resolve"
     test "raises if target does not resolve to a leaf node"
 
-    # TODO all the changes to this test file... extract that out into a separate commit
     test "raises if target does not exist" do
       assert_raise StatechartError,
                    ~r/Expected to find a target state with name :does_not_exist/,
